@@ -1,0 +1,146 @@
+@font-face{
+    font-family: 'Roboto-Regular';
+    src: url('../fonts/roboto/Roboto-Regular.ttf') format('truetype');
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    background-color: #f1f2f3;
+}
+
+body{
+    font-size: 1.6em;
+    line-height: 1.6em;
+    font-family: 'Roboto-Regular';
+}
+
+/*Notes for header and nav bar for mobile devices
+
+1. Nav bar should be floating on top of the main content, i.e. it should not push the main content.
+
+2. The submenus should not pop right below the parent menu/submenu, rather it should pop towards the right of      the parent item and it should slide in from right pushing the parent menu to the left.
+
+*/
+
+.header{
+    position: relative;
+    height: 50px;
+    background-color: #fff;
+}
+
+.header .header_brand{
+    border-bottom: 1px solid #00bfff;
+}
+
+.header_brand, .header_brand_logo{
+    height: 100%;
+}
+
+.header_brand *{
+    float: left;
+}
+
+.header_brand_name{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header_nav{
+    position: relative;
+    height: 0px;
+    color: inherit;
+    background-color: inherit;
+    display: block;
+    overflow: hidden;
+}
+
+.wrapper{
+    height: 100%;
+}
+
+.column{
+    background-color: #fff;
+    padding: 10px;
+    display: inline;
+}
+
+/*
+input[type="button"]{
+    background-color: #F22613;
+    color: #fff;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+*/
+
+/* Inc 1. */
+
+blockquote{
+    border-left: 5px solid #f22613;
+    background-color: #f7f7f7;
+    font-style: italic;
+    margin: 10px;
+    padding: 10px;
+}
+
+code{
+    background-color: #e4e4e4;
+    border: 1px solid #dadada;
+    border-radius: 4px;
+    padding: 5px;
+    font-style: normal;
+}
+
+pre > code{
+    display: block;
+}
+
+.button, input[type="button"],
+input[type="submit"], input[type="reset"] {
+    background-color: #f22613;
+    color: #fff;
+    padding: 0px 40px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    height: 32px;
+    line-height: 32px;
+}
+
+.button:focus, input[type="button"]:focus,
+input[type="submit"]:focus, input[type="reset"]:focus {
+    background-color: #e91f0c;
+    outline: none;
+}
+
+.button:hover, input[type="button"]:hover,
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #e91f0c;
+}
+
+input[type="text"], input[type="password"]{
+    height: 32px;
+    font-size: 12px;
+    line-height: 32px;
+    border: 1px solid #e7e8e9;
+    outline: none;
+}
+
+input[type="text"]:focus, input[type="password"]:focus{
+    border: 1px solid #00bfff;
+}
